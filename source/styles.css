@@ -1,0 +1,601 @@
+/* color palette{
+banner and footer bg color rgb(1, 20, 49);
+header text navy blue rgb(2, 20, 68);
+
+button font lime green rgb(167, 240, 159);
+
+dark drop shadow rgb(1, 16, 39);
+hover purple rgb(40, 1, 109); 
+hover lime green rgb(9, 240, 93);
+
+Dark navy rgb(1, 20, 49);
+Light navy rgb(2, 20, 68);
+Lightest navy rgb(2, 38, 95);
+
+Dark Teal rgb(11, 90, 128);
+Light Teal rgb(0, 114, 145);
+Lightest Teal rgb(0, 156, 163);
+
+Sage mint green rgb(57, 199, 162);
+Lime green rgb(126, 209, 116);
+yellow green rgb(186, 252, 101);
+
+icons blue rgb(114, 252, 245);
+} */
+
+html {
+  width: 100%;
+  /* max-height: fit-content; */
+  font-family: "Zilla Slab", "Century Gothic", serif;
+  background: linear-gradient(
+    300deg,
+    rgb(1, 20, 49),
+    rgb(2, 20, 68), 
+    rgb(2, 38, 95), 
+    rgb(11, 90, 128), 
+    rgb(0, 114, 145),
+    rgb(0, 156, 163), 
+    rgb(57, 199, 162), 
+    rgb(126, 209, 116),
+    rgb(186, 252, 101)
+    );
+  }
+body{
+  margin: 0px;
+  padding: 70px 0px 0px 0px;
+}
+section{
+  margin: 20px 40px;
+}
+@media only screen and (max-width: 600px){
+  section{
+    margin: 20px 15px;
+  }
+} 
+
+video{
+  margin: 0px;
+  width: 100%; 
+  height:auto;
+}
+
+/*-------------- ALL anchor tags-------------- */
+a {
+  text-decoration: none;
+  cursor:pointer;
+  color: rgb(2, 20, 68);
+  transition: 0.2s ease-in-out;
+}
+a:hover {
+  color: rgb(9, 240, 93);
+  text-shadow: 2px 2px 4px rgb(157, 100, 255);
+  filter: drop-shadow(4px 4px 3px #03205e);
+  
+}
+/*-------------- Banner styles-------------- */
+header{
+  position: fixed;
+  top:0;
+  width: 100%;
+  height: 50px;
+  padding: 10px 10px 0px 10px;
+  margin: 0px;
+  z-index: 10;
+}
+.banner-container{
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 40px;
+  grid-auto-flow: column;
+  background-color: rgb(1, 20, 49);
+}
+.banner-div{
+  position: fixed;
+  width: 100%;
+  margin: 0px;
+  padding:0px;
+  display: grid;
+  z-index: 10;
+  top:60px;
+  height: 10px;    
+  background: linear-gradient(
+    70deg,
+    rgb(157, 100, 255),
+    rgb(40, 1, 109),
+    rgb(4, 48, 119), 
+    rgb(6, 134, 185),
+    rgb(114, 252, 245),
+    rgb(50, 231, 183),
+    rgb(157, 243, 76), 
+    rgb(167, 240, 159)
+  );
+}
+.item1{
+  width: 200px;
+  grid-column: 1/2;
+  grid-row: 1;
+}
+.item2{
+  grid-column: 2/3;
+  grid-row: 1;
+}
+.item3{
+  grid-column: 3/4;
+  grid-row: 1;
+  margin-right: 10px;
+}  
+.fa-beat{
+  --fa-animation-duration: 7s;
+}
+.homeLink {
+  width:200px;
+  transition: 100ms ease-in-out;
+}
+.homeLink:hover{
+  filter: drop-shadow(2px 2px 1px rgb(157, 100, 255));
+}
+.signature{
+  width: 200px;
+  height: auto;
+  aspect-ratio: 5/2;
+}
+@media only screen and (max-width:500px){
+  .signature {
+  width:150px;
+  }
+}
+div ul {
+  display: flex;
+  margin: 0;
+  float: right;
+  font-size: 22px;
+  list-style: none;
+  padding: 0;
+}
+div ul li a{
+  padding: 0px 15px;
+  color: rgb(74, 213, 252);
+}
+/* End of banner styles */
+
+nav {
+  width:auto;
+  font-family: "Zilla Slab", "Century Gothic", serif;
+  font-weight: bold;
+}
+
+/*--------------- Navigation Menu----------------- */
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  font-size: 20px;
+  margin: 0px 100px;
+  padding:10px;
+  list-style: none;
+  text-align: center;
+}
+nav ul li a {
+  color: rgb(2, 20, 68);
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 600px){
+  nav ul {
+    gap: .5rem;
+    grid-template-columns: 1fr;
+    margin: auto; 
+  }
+  nav ul li{
+    font-size: 25px;
+    padding:10px 50px;
+    margin: 0px 20x;
+    border: 1px solid rgba(1, 20, 49, .5);
+    transition: 100ms ease-in-out;
+    box-shadow: 3px 5px 3px 1px rgb(3, 41, 58);
+    background: linear-gradient(
+    to right, 
+    rgb(177, 231, 132) 0%,
+    rgb(102, 228, 88) 30%,
+    rgb(43, 211, 253) 60%, 
+    rgb(3, 116, 182) 85%,
+    rgb(122, 11, 187) 105%
+    ); 
+  }
+ 
+  nav ul li:hover{
+    background-position: right center;
+    box-shadow: 3px 5px 3px 1px rgb(3, 41, 58);
+    filter: drop-shadow(2px 2px 1px rgb(157, 100, 255));
+  }
+ 
+}
+/* --------------Section 1 --------------*/
+#one{
+  padding-bottom: 75px;
+}
+#portrait {
+  margin: auto;
+  padding: 0 0 10px 0;
+  display: grid;
+  width: 150px;
+  height: auto;
+  filter: drop-shadow(7px 7px 5px rgb(1, 16, 39));
+  transition: 200ms ease-in-out;
+}
+#portrait:hover {
+  filter: drop-shadow( 9px 9px 6px rgb(40, 1, 109));
+}
+
+.intro-container {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: auto;
+  justify-content: center;
+}
+
+.typewriter {
+  font-size: 26px;
+  font-weight: bold;
+  color: rgb(2, 20, 68);
+  margin: 0;
+  padding: 0;
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.03em; /* Adjust as needed */
+}
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgba(2, 56, 92, 0);
+    }
+  }
+@media screen and (min-width:700px) {
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgb(2, 56, 92);
+    }
+  }
+  .typewriter {
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(2, 20, 68);
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  max-width: 210px;
+  border-right: 0.08em solid rgb(1, 20, 49); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.03em; /* Adjust as needed */
+  animation: typing 5s steps(28, end), blink-caret 1s step-end infinite;
+}
+
+}
+
+/* --------------Section 2 --------------*/
+#two{
+  padding-bottom: 50px;
+}
+
+/* --------------------------------------------------- */
+/*-------------- Section 3---------------------------- */
+/* --------------------------------------------------- */
+#three{
+  padding-bottom: 50px;
+}
+.tool-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+.tool-box{
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  
+}
+.tool-icon{
+  margin: auto;
+  font-size: 60px;
+  color: rgb(119, 246, 255);
+  justify-content: center;
+   align-items: center;
+  align-content: center;
+  filter: drop-shadow(6px 6px 1px rgb(3, 41, 58));
+}
+.tool-icon:hover{
+  filter: drop-shadow( 6px 6px 2px rgb(40, 1, 109));
+}
+
+.tool-label{
+  margin: 0 auto;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Barlow Condensed", "Century Gothic", sans-serif;
+  text-align: center;
+}
+
+
+/* --------------------------------------------------- */
+/* --------------Section 4 Project cards--------------*/
+.projects-section{
+  padding-top:50px;
+
+}
+.card-container{
+  display:grid;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(2, 1fr);
+  height: auto;
+  
+}
+.card-box{
+  display:flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-self: center;
+  max-width: 600px;
+  background-color: rgb(114, 252, 245);
+}
+.card-img{
+  margin: 2rem 2rem 0.5rem 2rem;
+  align-self: center;
+  filter: drop-shadow(5px 5px 3px #021635);
+  transition: 200ms ease-in-out;
+  /* aspect-ratio: 3/2;
+  height: auto; */
+}
+.ratio{
+  aspect-ratio: 3/2;
+  height: auto;
+}
+
+.card-img:hover{
+  filter: drop-shadow( 6px 6px 4px rgb(40, 1, 109));
+}
+.card-title{
+  margin: 0 auto;
+}
+.card-p{
+  margin: 0;
+}
+@media only screen and (max-width: 700px){
+  .card-container{
+    display:grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    height: auto;
+    justify-items: center; 
+  }
+
+}
+/*end of style for Project cards*/
+
+/*-------------- ALL --------------*/
+h1, h2, h3{
+  margin: 0px;
+  padding: 10px 0px 10px 0px;
+  font-family: "Zilla Slab", "Century Gothic", serif;
+  text-align: left;
+  color: rgb(2, 20, 68);
+}
+.intro-txt{
+  padding: 0px;
+  font-size: 20px;
+  font-family: "Zilla Slab", "Century Gothic", serif;
+  text-align: center;
+}
+p {
+  color: rgb(0, 0, 0);
+  border: 0;
+  margin: auto;
+  padding: 0px 0px 10px 0px;
+  font-size: 18px;
+  font-family: "Barlow Condensed", "Century Gothic", sans-serif;
+  text-align: left;
+}
+img{
+  max-width:100%;
+  display:block;
+}
+footer {
+  display:block;
+  text-align:center;
+  margin: auto;
+  padding-top: 100px;
+  color: rgb(167, 240, 159);
+}
+.footer{
+  background-color: #011431;
+  width: 100%;
+  height:200px;
+}
+
+/* For h1 on other pages */
+.title{
+  margin: auto;
+  padding: 50px 0px 10px 0px;
+  text-align: center;
+  
+}
+
+/* --------------------------------------------------- */
+/* --------------Style for ABOUT Page-------------- */
+.resume-card{
+  aspect-ratio:3/2;
+  height:auto;
+  margin: auto;
+  padding: 20px 0px 30px 0px;
+}
+.reason{
+  font-size: 18px;
+  font-family: "Barlow Condensed", "Century Gothic", sans-serif;
+  text-align: left;
+}
+h2.reason{
+  padding: 10px 0px;
+  margin: 0px;
+  font-family: "Zilla Slab", "Century Gothic", serif;
+}
+.reason-section{
+  border:5px ridge #021444;
+  background: linear-gradient(
+  120deg,
+  rgb(213, 252, 178) 10%,
+  rgb(127, 247, 207) 40%,
+  rgb(100, 255, 236)60%,
+  rgb(54, 201, 238)80%,
+  rgb(4, 157, 218)100%
+  );
+  padding: 20px;
+}
+@media only screen and (max-width: 400px){
+  table {
+    font-size: 12px;
+  }
+  .row-1{
+    font-size: 12px;
+  } 
+} 
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border:5px inset rgb(2, 20, 68);
+  text-align: left;
+  color:#021444;
+  
+}
+.col-1{
+  width: 35%;
+  font-weight: bold;
+  border: none;
+}
+.col-2{
+  width: 35%;
+  font-weight: bold;
+  border: none;
+}
+.col-3{
+  width: 30%;
+  font-weight: bold;
+  border: none;
+}
+.row-1{
+  font-weight: bolder;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px 0px;
+}
+.cert{
+  font-size: 15px;
+}
+.cert:hover{
+  color: rgb(13, 206, 84);
+  text-shadow: 3px 3px 2px #03293a;
+}
+td{
+  padding: 10px 3px;
+}
+tr:nth-child(odd) {
+  background-color: rgb(114, 252, 245);
+}
+tr:nth-child(even) {
+  background-color: rgba(101, 215, 230, 0.4);
+}
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------- */
+/* --------------------------BUTTONS----------------------------- */
+/* -------------------------------------------------------------- */
+
+
+.gradient-button {
+  padding: 15px 20px;
+  margin: auto;
+  font-size: 15px;
+  font-weight:bold;
+  color: rgb(3, 43, 119);
+  border-radius: 5px;
+  background-size: 300% auto;
+  transition: 0.5s;
+  box-shadow: 3px 5px 3px 1px rgb(3, 41, 58);
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+.gradient-button:hover{
+  box-shadow: 4px 5px 4px 1px rgb(3, 41, 58);
+  margin: auto;
+}
+.gradient-button-1 {
+  background-image: linear-gradient(
+    to right, 
+    rgb(131, 243, 119) 0%,
+    rgb(114, 252, 245) 20%, 
+    rgb(43, 211, 253) 60%, 
+    rgb(37, 2, 100) 100%
+  ) 
+}
+.gradient-button-1:hover {
+  background-position: right center;
+  color: #9af391; 
+  text-shadow: none;
+  
+}
+
+/*to Top button */
+.scrolly {
+  font-size: 15px;
+  font-weight:bold;
+  color: rgb(3, 43, 119);
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding:10px 0;
+  background-size: 200% auto;
+  transition: all 0.6s cubic-bezier(.25,.8,.25,1);
+  background-image: linear-gradient(
+    to right, 
+    #a7f09f 8%, 
+    #2bd3fd 51%, 
+    #250264 100%
+  )
+}
+.scrolly:hover {
+  background-position: right center;
+  color: #a7f09f; 
+  text-shadow: none;
+  
+}

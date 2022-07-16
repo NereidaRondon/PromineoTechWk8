@@ -1,0 +1,73 @@
+.contact-form{
+  display:flex;
+  justify-content: center;
+  margin: auto;
+  font-size: large;
+}
+
+form{
+margin-bottom: 50px;
+}
+
+label{
+  padding: 10px 0px;
+  display:block;
+}
+input{
+  margin:5px 0px;
+  padding:0;
+  border: none;
+  background-color: rgb(100, 255, 236);
+  display:block;
+}
+
+textarea{
+  margin:5px 0px;
+  padding:0;
+  background-color: rgb(100, 255, 236);
+  display:block;
+  border: none;
+  width: 350px;
+  height: 200px;
+}
+
+input[type="text"] {
+  width: 350px;
+  height: 35px;
+}
+input[type="email"] {
+  width: 350px;
+  height: 35px;
+}
+
+::placeholder{
+  font-family: "Zilla Slab", "Century Gothic", serif;
+  font-size: x-large;
+}
+
+
+/* ----------------BUTTONS----------------- */
+
+.form-btn {
+  font-family: "Zilla Slab", "Century Gothic", serif;
+  font-size: 20px;
+  font-weight:bold;
+  color: rgb(3, 43, 119);
+  text-align: center;
+  text-decoration: none;
+  width: 350px;
+  margin: 5px 0px;
+  padding:10px 0px;
+  background-size: 150% auto;
+  transition: all 0.6s cubic-bezier(.25,.8,.25,1);
+  background-image: linear-gradient(
+    to right, 
+    #a7f09f 0%, 
+    #2bd3fd 51%, 
+    #250264 100%
+  )
+}
+.form-btn:hover {
+  background-position: right center;
+  color: #a7f09f; 
+}
